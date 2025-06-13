@@ -28,6 +28,20 @@ Scan8 is a distributed scanning system for detecting trojans, viruses, malware, 
 - **Testing Module**  
   Contains utilities for validating setup and verifying functionality across components.
 
+## Project Structure
+
+```
+Scan8/
+├── Dashboard/         # Web UI built with Flask
+├── Coordinator/       # Adds new scan jobs to Redis queue
+├── Worker/            # Performs scanning using ClamAV
+├── Testing/           # Test scripts and validation suite
+├── Uploads/           # Directory to store uploaded files
+├── Results/           # Directory to store scan results
+├── .env               # Environment variables
+└── README.md          # Project documentation
+```
+
 ## Application Architecture
 ![Scan8 application architecture](https://user-images.githubusercontent.com/54113320/129327795-bd8da18e-484a-428a-aa90-7cc063e11b7f.png)
 
