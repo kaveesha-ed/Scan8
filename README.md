@@ -1,7 +1,18 @@
 Scan8 (Open for GSoC and Hacktoberfest)
 ========
 
-Scan8 is a distributed scanning system for detecting trojans, viruses, malware, and other malicious threats embedded in files. The system will allow one to submit a list of URLs or files and get the scan results in return.  
+Scan8 is a distributed scanning system for detecting trojans, viruses, malware, and other malicious threats embedded in files. The system will allow one to submit a list of URLs or files and get the scan results in return. 
+
+## Table of Contents
+- [Modules Overview](#modules-overview)
+- [Application Architecture](#application-architecture)
+- [Tech Stack & Dependencies](#tech-stack--dependencies)
+- [Local Setup Guide](#local-setup-guide)
+- [Usage](#usage)
+- [Testing Instructions](#testing-instructions)
+- [Demo Videos](#demo-videos)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Modules Overview
 - **Dashboard**  
@@ -32,6 +43,12 @@ Each module (Dashboard, Coordinator, Worker) contains its own `requirements.txt`
 
 > Ensure you have Python, Git, and Docker installed before starting.
 
+## Prerequisites
+Before proceeding with the setup, ensure the following tools are installed on your system:
+- [Python 3.8+](https://www.python.org/downloads/)
+- [Git](https://git-scm.com/)
+- [Docker Desktop](https://www.docker.com/products/docker-desktop/)
+
 ### Step 1 – Clone the repository
 
 ```bash
@@ -56,7 +73,7 @@ pip install -r Worker/requirements.txt
 
 ### Step 4 – Create environment file
 
-Ensure a `.env` file exists in the root directory with the following values (defaults are fine):
+Ensure a `.env` file exists in the root of the Scan8 directory with the following values (defaults are fine):
 
 ```
 MONGO_HOST=localhost
